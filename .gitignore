@@ -1,0 +1,53 @@
+# Ignore hidden folders
+# This takes care of .tmp, .sass-cache, .idea and many others
+.*/
+
+# Ignore folders
+vendor/
+coverage/
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# eslint cache
+.eslintcache
+
+# OSX
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon
+
+# Windows
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+
+# Always-ignore files and folders #
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swn
+*.swo
+*.swp
+._*
+*~
+
+# Ignore packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
