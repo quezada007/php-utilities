@@ -21,13 +21,15 @@ class Validator {
      * @param $url string The URL to validate
      * @return bool
      */
-    public function isValidURL($url) {
-        if (!is_string($url)) {
+    public function isValidURL(string $url): bool
+    {
+        if (!is_string($url))
+        {
             return false;
         }
         // regex came from https://stackoverflow.com/questions/2058578/best-way-to-check-if-a-url-is-valid
         $regex = '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i';
-        return preg_match($regex, $url) ? true : false;
+        return (bool)preg_match($regex, $url);
     }
 
     /**
